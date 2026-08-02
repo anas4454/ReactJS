@@ -1,5 +1,7 @@
 // import { useState } from 'react'
 
+import Card from "./card"
+
 // function App() {
 
 //   // let counter = 10
@@ -37,12 +39,23 @@
 // export default App
 
 
-function App() {
-  return (
-     <div className="min-h-screen flex items-center justify-center bg-slate-900">
-      <h1 className="text-5xl font-bold text-cyan-400">
-        Tailwind CSS is Working!
-      </h1>
+// function App() {
+//   return (
+//      <div className="min-h-screen flex items-center justify-center bg-slate-900">
+//       <h1 className="text-green-700 font-bold text-4xl">
+//         Tailwind CSS is Working!
+//       </h1>
+//     </div>
+//   )
+// }
+
+
+function App(){
+  return(
+    <div className="bg-gray-900 flex justify-center align-center min-h-screen">
+    <Card nombre="Anas" button="learn more" image="https://images.pexels.com/photos/35956956/pexels-photo-35956956.jpeg"/>
+    <Card nombre="Ali" button="Read more" image="https://images.pexels.com/photos/27815027/pexels-photo-27815027.jpeg"/>
+    <Card nombre="Ahmad"/>
     </div>
   )
 }
